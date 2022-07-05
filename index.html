@@ -20,45 +20,57 @@
     <div class="contenedor">
         <aside class="aside">
             <p class="aside__home">Home</p>
+
+            <!--Precio-->
+
             <div class="aside__precio">
                 <p class="aside__precio__texto">Precio</p>
-                <img class="flecha-precio" src="./assets/img/flecha abajo gris.png" alt="">
+                <img class="flecha-precio" src="./assets/img/flecha abajo gris.png" id="flecha-precio" alt="flecha">
                 
             </div>
             <hr>
-            <div class="rango-precio">
+            <div class="rango-precio" id="lista-precio">
                 <div class="rango-precio__de"><label for="">De:</label><input class="input__de" type="text"></div>
                 <div class="rango-precio__hasta"><label for="">Hasta:</label><input class="input__hasta" type="text"></div>
             </div>
             <div>
-                <p>Categoría</p>
-                <img src="./assets/img/flecha abajo gris.png" alt="">
-                <ul>
-                    <li>Smart TV</li>
-                    <li>Computadoras</li>
-                    <li>Celualres</li>
-                    <li>Tablets</li>
-                    <li>Gadges</li>
-                    <li>Audio</li>
-                    <li>Gaming</li>
+                <div class="categoria">
+                    <p class="categoria__texto">Categoría</p>
+                    <img class="flecha-precio" src="./assets/img/flecha abajo gris.png" alt="flecha" id="flecha-categoria">
+                </div>
+                <hr>
+                <ul class="lista-categoria" id="lista-categoria">
+                    <li class="lista-categoria__elemento"><img class="checkbox" src="./assets/img/square 3.svg" alt=""> Smart TV</li>
+                    <li class="lista-categoria__elemento"><img class="checkbox" src="./assets/img/square 3.svg" alt=""> Computadoras</li>
+                    <li class="lista-categoria__elemento"><img class="checkbox" src="./assets/img/square 3.svg" alt=""> Celualres</li>
+                    <li class="lista-categoria__elemento"><img class="checkbox" src="./assets/img/square 3.svg" alt=""> Tablets</li>
+                    <li class="lista-categoria__elemento"><img class="checkbox" src="./assets/img/square 3.svg" alt=""> Gadges</li>
+                    <li class="lista-categoria__elemento"><img class="checkbox" src="./assets/img/square 3.svg" alt=""> Audio</li>
+                    <li class="lista-categoria__elemento"><img class="checkbox" src="./assets/img/square 3.svg" alt=""> Gaming</li>
                 </ul>
             </div>
             <div>
-                <p>Dispositivo</p>
-                <img src="./assets/img/flecha abajo gris.png" alt="">
-                <ul>
-                    <li>Adroid</li>
-                    <li>Apple</li>
+                <div class="dispositivo">
+                    <p class="dispositivo__texto">Dispositivo</p>
+                    <img class="flecha-precio" src="./assets/img/flecha abajo gris.png" alt="flecha" id="flecha-dispositivo">
+                </div>
+                <hr>
+                <ul class="lista-categoria" id="lista-dispositivo">
+                    <li class="lista-categoria__elemento"><img class="checkbox" src="./assets/img/square 3.svg" alt="">Adroid</li>
+                    <li class="lista-categoria__elemento"><img class="checkbox" src="./assets/img/square 3.svg" alt="">Apple</li>
                 </ul>
             </div>
             <div>
-                <p>RAM</p>
-                <img src="./assets/img/flecha abajo gris.png" alt="">
-                <ul>
-                    <li>4GB</li>
-                    <li>8GB</li>
-                    <li>16GB</li>
-                    <li>32GB</li>
+                <div class="ram" >
+                    <p class="ram__texto">RAM</p>
+                    <img class="flecha-precio" src="./assets/img/flecha abajo gris.png" alt="flecha" id="flecha-ram">
+                </div>
+                <hr>
+                <ul class="lista-categoria" id="lista-ram">
+                    <li class="lista-categoria__elemento"><img class="checkbox" src="./assets/img/square 3.svg" alt="checkbox">4GB</li>
+                    <li class="lista-categoria__elemento"><img class="checkbox" src="./assets/img/square 3.svg" alt="checkbox">8GB</li>
+                    <li class="lista-categoria__elemento"><img class="checkbox" src="./assets/img/square 3.svg" alt="checkbox">16GB</li>
+                    <li class="lista-categoria__elemento"><img class="checkbox" src="./assets/img/square 3.svg" alt="checkbox">32GB</li>
                 </ul>
             </div>
         </aside>
@@ -238,5 +250,6 @@
     <footer class="footer">
         <p class="footer__texto" >Hecho con <span class="footer__corazon">&#x2665</span> en Academlo</p>
     </footer>
+    <script src="./assets/js/app.js"></script>
 </body>
 </html>

@@ -140,17 +140,56 @@ hr{
     border: 1px solid var(--lineasDelgadas);
     margin-top: 0;
 }
+
 .rango-precio{
     font-size: 1.4rem;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    color:var(--colorFuente);
+    display:none;
 }
 .input__de{
-    width: 60%;
-    margin-left: 1rem;
+    width: 60%
+    
 }
 .input__hasta{
     width: 60%;
-    margin-left: 1rem;
+    
+}
+.categoria{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+.categoria__texto{
+    margin: 0;
+}
+.lista-categoria{
+    list-style: none;  
+    padding: 0; 
+    display: none;
+}
+.lista-categoria__elemento{
+    display: flex;
+    margin: 0;
+    color:var(--colorFuente);
+}
+.checkbox{
+    margin-right: 1rem;
+}
+.dispositivo{
+    display: flex;
+    justify-content: space-between;
+}
+.dispositivo__texto{
+    margin: 0;
+}
+.ram{
+    display: flex;
+    justify-content: space-between;
+}
+.ram__texto{
+    margin: 0;
 }
 
 /* MAIN */
@@ -193,6 +232,7 @@ hr{
     margin-left: 1rem;
     font-size: 2.4rem;
     color: var(--colorFuente);
+    font-weight: bold;
 }
 .tarjeta__precio{
     margin: 0;
@@ -204,6 +244,7 @@ hr{
     margin-top: 3px;
     margin-left: 2rem;
     font-size: 2.4rem;
+    font-weight: bold;
     color: var(--colorFuente);
 }
 .tarjeta__imagen__carrito{
