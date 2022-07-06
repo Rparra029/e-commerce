@@ -149,12 +149,10 @@ hr{
     display:none;
 }
 .input__de{
-    width: 60%
-    
+    width: 60%    
 }
 .input__hasta{
-    width: 60%;
-    
+    width: 60%;    
 }
 .categoria{
     display: flex;

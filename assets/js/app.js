@@ -1,10 +1,15 @@
 'use strick';
 
-/* Precio */
+/* Section Aside, 
+function for deploy*/
+
+/* Con la siguiente función paso directamente los parámetros para poder usarla*/ 
+
 desplegar('flecha-precio', 'lista-precio');
 desplegar('flecha-categoria', 'lista-categoria');
 desplegar('flecha-dispositivo', 'lista-dispositivo');
 desplegar('flecha-ram', 'lista-ram');
+
 function desplegar (idFlecha, idCaja){
     document.getElementById(idFlecha).addEventListener('click', (evento)=> {
         let mostrarRangos = document.getElementById(idCaja)
@@ -16,3 +21,36 @@ function desplegar (idFlecha, idCaja){
 
     })
 }
+
+/* ------Funciónes  de selección de checkbox--------- */
+
+/*  Esta función usa como parámetro el id del elemento que registra el evento
+
+
+seleccionar('checkbox-empty')
+
+function seleccionar(idCheckbox){
+    
+    let componente = document.getElementById(idCheckbox)
+    componente.addEventListener('click', (evento)=>{
+        if(componente.getAttribute('src') == './assets/img/square_3.svg'){
+            componente.setAttribute('src', './assets/img/check_box_3.svg');
+        }else{
+            componente.setAttribute('src', './assets/img/square_3.svg')
+        }
+    })
+} 
+*/
+
+
+/* Esta Función es llamada desde el HTML */
+
+function seleccionar(componente){
+    if(componente.getAttribute('src') == './assets/img/square_3.svg'){
+        componente.setAttribute('src', './assets/img/check_box_3.svg');
+    }else{
+        componente.setAttribute('src', './assets/img/square_3.svg')
+    }
+}
+
+/* ------FIN de funciónes  de selección de checkbox--------- */
