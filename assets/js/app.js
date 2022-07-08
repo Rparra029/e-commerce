@@ -54,3 +54,15 @@ function seleccionar(componente){
 }
 
 /* ------FIN de funciónes  de selección de checkbox--------- */
+
+
+/* -------- Corazón de me encanta ----------- */
+
+
+function encanta(componente){
+        if(componente.getAttribute('src') == './assets/img/corazon gris.png'){
+            componente.setAttribute('src', './assets/img/corazon rojo.png')
+        }else{
+            componente.setAttribute('src', './assets/img/corazon gris.png')
+        }
+}

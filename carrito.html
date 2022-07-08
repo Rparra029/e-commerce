@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cel-commerce</title>
+    <link rel="stylesheet" href="./assets/css/normalize.css">
+    <link href="https://fonts.googleapis.com/css2?family=Krub&family=PT+Sans:wght@400;700&family=Roboto:wght@300;400&family=Staatliches&family=Yantramanav:wght@300;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+   
+    <header class="header">
+        <div class="nombre-tienda"><h1>CEL-commerce</h1></div>
+        <div class="header__img"><img src="./assets/img/usuario gris.png" alt="user"></div>
+        <div class="header__img"><img src="./assets/img/corazon gris.png" alt="corazon"></div>
+        <div class="header__img"><img src="./assets/img/carro gris.png" alt="carrito"></div>
+    </header>
+<!--
+    carrito de compra
+-->
+    <div class="contenedor-carrito">
+        <div class="carrito-de-compra">
+            <p class="cerrar">X</p>
+            <h4 class="carrito-de-compra-titulo">Carrito de compras</h4>
+            <div class="producto-carrito">
+                <div class="carrito-img"><img class="producto-carrito__img" src="./assets/img/celularcito.png" alt="producto"></div>
+                <div class="producto-carrito__detalle">
+                    <p class="producto-carrito__marca"> Samsung</p>
+                    <p class="producto-carrito__modelo">Galaxy s52</p>
+                    <input class="producto-carrito__cantidad" type="number" placeholder="Cantidad" min="1">
+                </div>
+                <div class="producto-carrito__eliminar"><img src="./assets/img/basura.png" alt="eliminar"></div>
+            </div>
+            <div class="producto-carrito-costo">
+                <p class="producto-carrito-costo__texto">Total</p>
+                <p class="carrito-costo-articulo">$<span>5,200</span></p>
+            </div>
+            <hr>
+            <div class="costo-total">
+                <div class="costo-total__textos">
+                    <div class="costo-subtotal-total">
+                        <p class="carrito-subtotal">Subtotal</p>
+                        <p class="carrito-total">Total</p>
+                    </div>
+                    <div class="cantidad-subtotal-total">
+                        <p class="carrito-subtotal__cantidad">$ <span>5,200</span></p>
+                        <p class="carrito-total__cantidad">$ <span  class="carrito-total__cantidad-total">5,200</span></p>
+                    </div>
+                </div>
+                <div>
+                    <input class="carrito-compra-btn" type="submit" value="Realizar compra">
+                </div>
+            </div>
+    </div>
+<!--
+    fin carrito de compra
+-->
+    </div>
+    <div class="contenedor">
+        <aside class="aside">
+            <p class="aside__home">Home</p>
+
+            <!--Precio-->
+
+            <div class="aside__precio">
+                <p class="aside__precio__texto">Precio</p>
+                <img class="flecha-precio" src="./assets/img/flecha abajo gris.png" id="flecha-precio" alt="flecha">
+                
+            </div>
+            <hr>
+            <div class="rango-precio" id="lista-precio">
+                <div class="rango-precio__de"><label for="">De:</label><input class="input__de" type="text"></div>
+                <div class="rango-precio__hasta"><label for="">Hasta:</label><input class="input__hasta" type="text"></div>
+            </div>
+            <div>
+                <div class="categoria">
+                    <p class="categoria__texto">Categoría</p>
+                    <img class="flecha-precio" src="./assets/img/flecha abajo gris.png" alt="flecha" id="flecha-categoria">
+                </div>
+                <hr>
+                <ul class="lista-categoria" id="lista-categoria">
+                    <li class="lista-categoria__elemento"><img class="checkbox" id="checkbox-empty" src="./assets/img/square_3.svg" alt="cuadro" onclick="seleccionar(this)"> Smart TV</li>
+                    <li class="lista-categoria__elemento"><img class="checkbox" id="checkbox-empty1" src="./assets/img/square_3.svg" alt="cuadro" onclick="seleccionar(this)"> Computadoras</li>
+                    <li class="lista-categoria__elemento"><img class="checkbox" id="checkbox-empty2" src="./assets/img/square_3.svg" alt="cuadro" onclick="seleccionar(this)"> Celualres</li>
+                    <li class="lista-categoria__elemento"><img class="checkbox" id="checkbox-empty3" src="./assets/img/square_3.svg" alt="cuadro" onclick="seleccionar(this)"> Tablets</li>
+                    <li class="lista-categoria__elemento"><img class="checkbox" id="checkbox-empty4" src="./assets/img/square_3.svg" alt="cuadro" onclick="seleccionar(this)"> Gadges</li>
+                    <li class="lista-categoria__elemento"><img class="checkbox" id="checkbox-empty5" src="./assets/img/square_3.svg" alt="cuadro" onclick="seleccionar(this)"> Audio</li>
+                    <li class="lista-categoria__elemento"><img class="checkbox" id="checkbox-empty6" src="./assets/img/square_3.svg" alt="cuadro" onclick="seleccionar(this)"> Gaming</li>
+                </ul>
+            </div>
+            <div>
+                <div class="dispositivo">
+                    <p class="dispositivo__texto">Dispositivo</p>
+                    <img class="flecha-precio" src="./assets/img/flecha abajo gris.png" alt="flecha" id="flecha-dispositivo">
+                </div>
+                <hr>
+                <ul class="lista-categoria" id="lista-dispositivo">
+                    <li class="lista-categoria__elemento"><img class="checkbox" src="./assets/img/square_3.svg" alt="cuadro" onclick="seleccionar(this)">Adroid</li>
+                    <li class="lista-categoria__elemento"><img class="checkbox" src="./assets/img/square_3.svg" alt="cuadro" onclick="seleccionar(this)">Apple</li>
+                </ul>
+            </div>
+            <div>
+                <div class="ram" >
+                    <p class="ram__texto">RAM</p>
+                    <img class="flecha-precio" src="./assets/img/flecha abajo gris.png" alt="flecha" id="flecha-ram">
+                </div>
+                <hr>
+                <ul class="lista-categoria" id="lista-ram">
+                    <li class="lista-categoria__elemento"><img class="checkbox" src="./assets/img/square_3.svg" alt="checkbox" onclick="seleccionar(this)">4GB</li>
+                    <li class="lista-categoria__elemento"><img class="checkbox" src="./assets/img/square_3.svg" alt="checkbox" onclick="seleccionar(this)">8GB</li>
+                    <li class="lista-categoria__elemento"><img class="checkbox" src="./assets/img/square_3.svg" alt="checkbox" onclick="seleccionar(this)">16GB</li>
+                    <li class="lista-categoria__elemento"><img class="checkbox" src="./assets/img/square_3.svg" alt="checkbox" onclick="seleccionar(this)">32GB</li>
+                </ul>
+            </div>
+        </aside>
+<!--
+    Sección de cuadro de búsqueda
+-->
+        <div class="contenedor__section">
+            <section class="section">
+                <div class="section__busqueda">
+                    <div class="section__busqueda__texto"><input class="section__busqueda__texto__input" type="text" placeholder="¿Qué producto estás buscando?"></div>
+                    <div class="section__busqueda__img"><img class="section__img__lupa" src="./assets/img/lupa gris.png" alt=""></div>
+                </div>
+                <div class="section__filtro">
+                    <div class="section__filtro__texto"><input class="section__filtro__input" type="text"></div>
+                    <div class="section__filtro__img"><img src="./assets/img/flecha abajo gris.png" alt=""></div>
+                </div>
+            </section>
+            <p class="contenedor__parrafo">Total de productos: <span class="contenedor__parrafo__span">51</span></p>            
+        </div>   
+    </div>
+
+    <footer class="footer">
+        <p class="footer__texto" >Hecho con <span class="footer__corazon">&#x2665</span> en Academlo</p>
+    </footer>
+    <script src="./assets/js/app.js"></script>
+    <script src="./assets/js/custom.js"></script>
+</body>
+</html>
