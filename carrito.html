@@ -22,22 +22,26 @@
 -->
     <div class="contenedor-carrito">
         <div class="carrito-de-compra">
-            <p class="cerrar">X</p>
-            <h4 class="carrito-de-compra-titulo">Carrito de compras</h4>
-            <div class="producto-carrito">
-                <div class="carrito-img"><img class="producto-carrito__img" src="./assets/img/celularcito.png" alt="producto"></div>
-                <div class="producto-carrito__detalle">
-                    <p class="producto-carrito__marca"> Samsung</p>
-                    <p class="producto-carrito__modelo">Galaxy s52</p>
-                    <input class="producto-carrito__cantidad" type="number" placeholder="Cantidad" min="1">
+            <div class="carrito-de-compra-superior">
+                <p class="cerrar">X</p>
+                <h4 class="carrito-de-compra-titulo">Carrito de compras</h4>
+                <div class="contenedor-producto-carrito">
+                    <div class="producto-carrito">
+                        <div class="carrito-img"><img class="producto-carrito__img" src="./assets/img/celularcito.png" alt="producto"></div>
+                        <div class="producto-carrito__detalle">
+                            <p class="producto-carrito__marca"> Samsung</p>
+                            <p class="producto-carrito__modelo">Galaxy s52</p>
+                            <input class="producto-carrito__cantidad" type="number" placeholder="Cantidad" min="1">
+                        </div>
+                        <div class="producto-carrito__eliminar"><img src="./assets/img/basura.png" alt="eliminar"></div>
+                    </div>
+                    <div class="producto-carrito-costo">
+                        <p class="producto-carrito-costo__texto">Total</p>
+                        <p class="carrito-costo-articulo">$<span>5,200</span></p>
+                    </div>
                 </div>
-                <div class="producto-carrito__eliminar"><img src="./assets/img/basura.png" alt="eliminar"></div>
+                <hr>
             </div>
-            <div class="producto-carrito-costo">
-                <p class="producto-carrito-costo__texto">Total</p>
-                <p class="carrito-costo-articulo">$<span>5,200</span></p>
-            </div>
-            <hr>
             <div class="costo-total">
                 <div class="costo-total__textos">
                     <div class="costo-subtotal-total">
@@ -53,6 +57,7 @@
                     <input class="carrito-compra-btn" type="submit" value="Realizar compra">
                 </div>
             </div>
+        </div>
     </div>
 <!--
     fin carrito de compra
