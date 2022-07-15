@@ -152,8 +152,8 @@ function loadHTML(){
  function openCart(){
     document.getElementById('cart').addEventListener('click', (evento)=>{
         let C = document.querySelector('.carrito-de-compra');
-        C.style.visibility = 'visible';
-        console.log('abierto')
+        C.style.visibility = 'visible'
+        
     })
  }
  

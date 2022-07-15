@@ -13,10 +13,11 @@ desplegar('flecha-ram', 'lista-ram');
 function desplegar (idFlecha, idCaja){
     document.getElementById(idFlecha).addEventListener('click', (evento)=> {
         let mostrarRangos = document.getElementById(idCaja)
-        if(mostrarRangos.style.display ==="none"){
-            mostrarRangos.style.display = 'grid'
+        
+        if(mostrarRangos.style.display ==="grid"){
+            mostrarRangos.style.display = 'none'
         }else{
-            mostrarRangos.style.display = 'none';
+            mostrarRangos.style.display = 'grid';
         }
 
     })

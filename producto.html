@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cel-commerce</title>
+    <link rel="stylesheet" href="./assets/css/normalize.css">
+    <link href="https://fonts.googleapis.com/css2?family=Krub&family=PT+Sans:wght@400;700&family=Roboto:wght@300;400&family=Staatliches&family=Yantramanav:wght@300;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+
+<!--
+    Header
+-->
+        <header class="header">
+            <div class="nombre-tienda"><h1>CEL-commerce</h1></div>
+            <div class="header__img"><img src="./assets/img/usuario gris.png" alt="user"></div>
+            <div class="header__img"><img src="./assets/img/corazon gris.png" alt="corazon"></div>
+            <div class="header__img" id="cart" onclick="openCart(this)"><img src="./assets/img/carro gris.png" alt="carrito"><p class="contador">0</p></div>
+        </header>
+
+<!--
+    fin del header
+-->
+
+       
+    <div class="contenedor">
+        <aside class="aside">
+            <p class="aside__home">Home</p>
+
+            <div>
+                <div class="aside__img"><img src="./assets/img/Group 114.jpg" alt=""></div>
+                <div class="aside__img"><img src="./assets/img/Group 115.jpg" alt=""></div>
+                <div class="aside__img"><img src="./assets/img/image 7.jpg" alt=""></div>
+            </div>
+
+            
+        </aside>
+<!--
+    Sección de cuadro de búsqueda
+-->
+        <div class="contenedor__section">
+            <section class="section">
+                <div class="section__busqueda">
+                    <div class="section__busqueda__texto"><input class="section__busqueda__texto__input" type="text" placeholder="¿Qué producto estás buscando?"></div>
+                    <div class="section__busqueda__img"><img class="section__img__lupa" src="./assets/img/lupa gris.png" alt=""></div>
+                </div>
+                <div class="section__filtro" style="visibility:hidden;">
+                    <div class="section__filtro__texto"><input class="section__filtro__input" type="text"></div>
+                    <div class="section__filtro__img"><img src="./assets/img/flecha abajo gris.png" alt=""></div>
+                </div>
+            </section>
+            
+<!--
+    Contenedor del GRID de producto
+-->
+            <main>
+                <div class="contenedor-articulo">
+                    <div class="articulo-imagen">
+                        <div class="articulo-imagen__img"><img class="articulo-imagen__imagen" src="./assets/img/image 111.png" alt=""></div>
+                        <div class="articulo-imagen__corazon"><img src="./assets/img/corazon gris.png" alt=""></div>
+                    </div>
+                    <div class="articulo-detalle">
+                        <div class="articulo-detalle__superior">
+                            <div class="articulo-detalle__superior__datos">
+                                <p class="articulo-detalle__marca">Samsung</p>
+                                <p class="articulo-detalle__modelo">Galaxy A32</p>
+                                <div class="articulo-detalle__estrellas">
+                                    <img src="./assets/img/estrella.png" alt="estrella">
+                                    <img src="./assets/img/estrella.png" alt="estrella">
+                                    <img src="./assets/img/estrella.png" alt="estrella">
+                                    <img src="./assets/img/estrella.png" alt="estrella">
+                                    <img src="./assets/img/estrella.png" alt="estrella">
+                                </div>
+
+                            </div> 
+                            <div class="articulo-detalle__carrito"><img class="articulo-detalle__carrito__img"src="./assets/img/carro rojo.png" alt=""></div>
+                        </div>
+                        <div class="articulo-detalle__texto"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui amet facere, magnam accusamus quibusdam consequatur animi natus fugit doloremque ipsa. </p></div>
+                        <div class="articulo-detalle__precio">
+                            <div class="articulo-detalle__precio-cont">
+                                <p class="articulo-detalle__precio-texto">Precio</p>
+                                <p class="articulo-detalle__costo">$ 5,200</p>
+                            </div>
+                            <div class="articulo-detalle__input">
+                                <input class="articulo-detalle__cantidad" type="number" value="1" min="1">
+                            </div>
+                        </div>
+                        <div class="miniaturas">
+                            <p class="miniaturas__texto">Color</p>
+                            <div class="miniaturas-img">
+                                <div class="miniatura-img"><img src="./assets/img/image 9.jpg" alt="miniaturas"></div>
+                                <div class="miniatura-img"><img src="./assets/img/image 10.jpg" alt="miniaturas"></div>
+                                <div class="miniatura-img"><img src="./assets/img/image 11.jpg" alt="miniaturas"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div> 
+        
+    </div>
+    <div class="section-info">
+        <div class="descripcion-del-producto">
+            <div class="descripcion-titulo">
+                <p class="descripcion-texto">Descripción del producto</p>
+                <p class="especificaciones-texto">Descripción del producto</p>
+            </div>
+            <hr class="descripcion-hr">
+            
+            <p class="descripcion-texto-p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam sequi placeat commodi voluptatibus rerum explicabo praesentium error cum iusto cupiditate.</p>
+            <p class="descripcion-texto-p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam sequi placeat commodi voluptatibus rerum explicabo praesentium error cum iusto cupiditate.</p>
+            <p class="descripcion-texto-p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam sequi placeat commodi voluptatibus rerum explicabo praesentium error cum iusto cupiditate.</p>
+        </div>
+    </div>  
+    
+        <p class="options">Otras opciones</p>
+        
+            <div class="contenedor-opciones">
+                <div class="tarjeta">
+                    <div class="tarjeta__imagen-opciones">
+                        <img class="opciones__imagen" src="./assets/img/image 1.jpg" alt="imagen del producto">
+                        <img class="tarjeta__imagen__corazon" src="./assets/img/corazon gris.png" onclick="encanta(this)" alt="corazon rojo">
+                    </div>
+                    <div class="tarjeta__contenido">
+                        <div class="tarjeta__info">
+                            <p class="tarjeta__marca">samsung</p>
+                            <p class="tarjeta__modelo">Galaxy s51</p>
+                            <p class="tarjeta__precio">Precio</p>
+                            <p class="tarjeta__texto__precio">$<span>5,100.00</span></p>
+                        </div>
+                        <div class="tarjeta__imagen__carrito">
+                            <img class="carro-rojo" amount="1" data-id="1" src="./assets/img/carro rojo.png">
+                        </div>
+                    </div>    
+                </div>
+                <div class="tarjeta">
+                    <div class="tarjeta__imagen-opciones">
+                        <img class="opciones__imagen" src="./assets/img/image 3.jpg" alt="imagen del producto">
+                        <img class="tarjeta__imagen__corazon" src="./assets/img/corazon gris.png" onclick="encanta(this)" alt="corazon rojo">
+                    </div>
+                    <div class="tarjeta__contenido">
+                        <div class="tarjeta__info">
+                            <p class="tarjeta__marca">samsung</p>
+                            <p class="tarjeta__modelo">Galaxy s52</p>
+                            <p class="tarjeta__precio">Precio</p>
+                            <p class="tarjeta__texto__precio">$<span>5,200.00</span></p>
+                        </div>
+                        <div class="tarjeta__imagen__carrito">
+                            <img class="carro-rojo" amount="1" data-id="2" src="./assets/img/carro rojo.png">
+                        </div>
+                    </div>    
+                </div>
+                <div class="tarjeta">
+                    <div class="tarjeta__imagen-opciones">
+                        <img class="opciones__imagen" src="./assets/img/image 4.jpg" alt="imagen del producto">
+                        <img class="tarjeta__imagen__corazon" src="./assets/img/corazon gris.png" onclick="encanta(this)" alt="corazon rojo">
+                    </div>
+                    <div class="tarjeta__contenido">
+                        <div class="tarjeta__info">
+                            <p class="tarjeta__marca">samsung</p>
+                            <p class="tarjeta__modelo">Galaxy s53</p>
+                            <p class="tarjeta__precio">Precio</p>
+                            <p class="tarjeta__texto__precio">$<span>5,300.00</span></p>
+                        </div>
+                        <div class="tarjeta__imagen__carrito">
+                            <img class="carro-rojo" amount="1" data-id="3" src="./assets/img/carro rojo.png">
+                        </div>
+                    </div>    
+                </div>
+                <div class="tarjeta">
+                    <div class="tarjeta__imagen-opciones">
+                        <img class="opciones__imagen" src="./assets/img/image 15.jpg" alt="imagen del producto">
+                        <img class="tarjeta__imagen__corazon" src="./assets/img/corazon gris.png" onclick="encanta(this)" alt="corazon rojo">
+                    </div>
+                    <div class="tarjeta__contenido">
+                        <div class="tarjeta__info">
+                            <p class="tarjeta__marca">samsung</p>
+                            <p class="tarjeta__modelo">Galaxy s54</p>
+                            <p class="tarjeta__precio">Precio</p>
+                            <p class="tarjeta__texto__precio">$<span>5,400.00</span></p>
+                        </div>
+                        <div class="tarjeta__imagen__carrito">
+                            <img class="carro-rojo" amount="1" data-id="4" src="./assets/img/carro rojo.png">
+                        </div>
+                    </div>    
+                </div>
+            </div>
+        
+    
+    <footer class="footer">
+        <p class="footer__texto" >Hecho con <span class="footer__corazon">&#x2665</span> en Academlo</p>
+    </footer>
+    <script src="./assets/js/app.js"></script>
+    <script src="./assets/js/custom.js"></script>
+</body>
+</html>
