@@ -24,11 +24,57 @@
 <!--
     fin del header
 -->
-
+        <!--
+    carrito de compra
+-->
+<div class="contenedor-carrito">
+    <div class="carrito-de-compra">
+        <p class="cerrar-carrito" onclick="closeCart(this)">X</p>
+        <h4 class="carrito-de-compra-titulo">Carrito de compras</h4>
+        <div class="carrito-de-compra-superior">
+           <!--  <div class="contenedor-producto-carrito">
+                    <div class="producto-carrito">
+                        <div class="carrito-img"><img class="producto-carrito__img" src="./assets/img/celularcito.png" alt="producto"></div>
+                        <div class="producto-carrito__detalle">
+                            <p class="producto-carrito__marca"> Samsung</p>
+                            <p class="producto-carrito__modelo">Galaxy s52</p>
+                            <input class="producto-carrito__cantidad" type="number" placeholder="Cantidad" min="1">
+                        </div>
+                        <div class="producto-carrito__eliminar"><img src="./assets/img/basura.png" alt="eliminar" ></div>
+                    </div>
+                    <div class="producto-carrito-costo">
+                        <p class="producto-carrito-costo__texto">Total</p>
+                        <p class="carrito-costo-articulo">$<span>5,200</span></p>
+                    </div>
+            </div>
+            <hr> -->
+        </div>
+        <div class="costo-total">
+            <div class="costo-total__textos">
+                <div class="costo-subtotal-total">
+                    <p class="carrito-subtotal">Subtotal</p>
+                    <p class="carrito-total">Total</p>
+                </div>
+                <div class="cantidad-subtotal-total">
+                    <p class="carrito-subtotal__cantidad">$ <span></span></p>
+                    <p class="carrito-total__cantidad">$ <span  class="carrito-total__cantidad-total"></span></p>
+                </div>
+            </div>
+            <div>
+                <input class="carrito-compra-btn" type="submit" value="Realizar compra">
+            </div>
+        </div>
+    </div>
+</div> 
+<!--
+fin carrito de compra
+-->
        
     <div class="contenedor">
         <aside class="aside">
-            <p class="aside__home">Home</p>
+            <a href="index.html">
+                <p class="aside__home">Home</p>
+            </a>
 
             <div>
                 <div class="aside__img"><img src="./assets/img/Group 114.jpg" alt=""></div>
@@ -105,11 +151,15 @@
     <div class="section-info">
         <div class="descripcion-del-producto">
             <div class="descripcion-titulo">
-                <p class="descripcion-texto">Descripción del producto</p>
-                <p class="especificaciones-texto">Descripción del producto</p>
+                <div>
+                    <p class="descripcion-texto" onclick="cambiar(this)">Descripción del producto</p>
+                    <hr class="descripcion-hr">
+                </div>
+                <div>
+                    <p class="especificaciones-texto" onclick="cambiar(this)">Especificaciones del producto</p>
+                    <hr class="descripcion-hr">
+                </div>
             </div>
-            <hr class="descripcion-hr">
-            
             <p class="descripcion-texto-p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam sequi placeat commodi voluptatibus rerum explicabo praesentium error cum iusto cupiditate.</p>
             <p class="descripcion-texto-p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam sequi placeat commodi voluptatibus rerum explicabo praesentium error cum iusto cupiditate.</p>
             <p class="descripcion-texto-p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam sequi placeat commodi voluptatibus rerum explicabo praesentium error cum iusto cupiditate.</p>

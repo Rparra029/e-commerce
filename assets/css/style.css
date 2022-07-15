@@ -29,7 +29,9 @@ h1{
     font-weight: bold;
     margin: 0;
 }
-
+a{
+    text-decoration: none;
+}
 
 /* cuerpo */
 
@@ -478,6 +480,13 @@ hr{
     line-height: 1.5;
     
 }
+.especificaciones-texto,
+.descripcion-texto{
+    margin:0;
+}
+.descripcion-texto{
+    color: var(--secundario);
+}
 .descripcion-titulo{
      display: flex;
      gap: 10rem;
@@ -494,4 +503,8 @@ hr{
 }
 .tarjeta__imagen-opciones{
     border-bottom: 1px solid var(--lineasOscuras);
+}
+.options{
+    margin-left: 5rem;
+    color: var(--colorFuente);
 }

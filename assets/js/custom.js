@@ -18,6 +18,8 @@ let totalPrice = 0;
 let amountProducts = document.querySelector('.contador');
 ///Contador para indicar la cantidad de porductos en el carrito.
 let countProducts = 0;
+//variable para almacenar el contenedor de las especificaciones
+let cambio = document.querySelector('.descripcion-titulo')
 
 //Funciones
 
@@ -156,4 +158,5 @@ function loadHTML(){
         
     })
  }
+ 
  
